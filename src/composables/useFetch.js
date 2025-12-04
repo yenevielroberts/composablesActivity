@@ -9,9 +9,9 @@ export function useFetch(url){
     const fetchData= async()=>{
 
         try {
-            const res= await fetch(url);
+            const res= await fetch(url.value);
 
-            loading=true
+            loading.value=true
             error.value=null
 
             if(!res.ok){
