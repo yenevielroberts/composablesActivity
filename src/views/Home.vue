@@ -1,5 +1,5 @@
 <script setup>
-import { ref, watch } from 'vue';
+import { ref} from 'vue';
 import { useFetch } from '../composables/useFetch';
 import MealCard from '@/components/MealCard.vue';
 import SearchBar from '@/components/SearchBar.vue';
@@ -49,5 +49,6 @@ const mealXCategoria=(categoria)=>{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: space-around;
     }
 </style>

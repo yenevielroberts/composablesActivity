@@ -37,3 +37,11 @@ npm run dev
 npm run build
 ```
 # composablesActivity
+
+
+colors
+
+verde #BBCB64
+amarillo #FFE52A
+naranja #F79A19
+rojo #CF0F0F
