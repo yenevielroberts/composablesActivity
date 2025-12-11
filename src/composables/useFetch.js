@@ -1,4 +1,4 @@
-import { onMounted, ref } from "vue";
+import { onMounted, ref, watch } from "vue";
 
 export function useFetch(url){
 
@@ -31,5 +31,6 @@ export function useFetch(url){
     //Disparador que esta que no cargue el componente no pasa los datos, no llama la función
     onMounted(fetchData);//Ejecuta la función
 
+    watch(url,fetchData)//Necesario para cada vez que se cambie el paramtro se redenrise la página
     return {data, error,loading, fetchData}
 }

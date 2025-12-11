@@ -6,25 +6,17 @@ import SearchBar from '@/components/SearchBar.vue';
 
 const cerca=ref('chicken')
 
-const cargarDatos=(categoria)=>{
+const url=ref(`https://www.themealdb.com/api/json/v1/1/search.php?s=${cerca.value}`)
 
-  const url=ref(`https://www.themealdb.com/api/json/v1/1/search.php?s=${categoria.value}`)
-  return url
-}
-
-const {data, error,loading, fetchData}=useFetch(cargarDatos(cerca));
+const {data, error,loading, fetchData}=useFetch(url);
 
 const mealXCategoria=(categoria)=>{
 
-  cerca.value=categoria
+  //Pongo esto y no cerca porque esta variable es la que paso al useFetch
+  url.value=(`https://www.themealdb.com/api/json/v1/1/search.php?s=${categoria.value}`)
 }
 
-watch(
-    ()=>cerca,
-    (cerca)=>{
-        useFetch(cargarDatos(cerca))
-    }
-)
+
 
 
 </script>
