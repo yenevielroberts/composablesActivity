@@ -41,7 +41,4 @@ npm run build
 
 colors
 
-verde #BBCB64
-amarillo #FFE52A
-naranja #F79A19
-rojo #CF0F0F
+Paleta de colores https://coolors.co/palette/006d77-83c5be-edf6f9-ffddd2-e29578

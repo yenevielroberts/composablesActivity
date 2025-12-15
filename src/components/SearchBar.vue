@@ -20,23 +20,25 @@ const buscarXCategoria=()=>{
 </template>
 
 <style scoped>
+    
     input{
-        border-radius: 5px;
+        border-radius: 10px;
         padding: 5px;
         width: 300px;
         border: solid 2px;
     }
 
     input:focus{
-        outline-color: blue;
+        outline-color: #83C5BE;
     }
 
     button{
-        background-color: #FFE52A;
+        background-color: #E29578;
         border-radius: 10px;
         padding: 5px;
         width: 100px;
         font-weight: bold;
+        font-size: large;
         border: 0px;
         margin: 10px;
         
@@ -44,7 +46,7 @@ const buscarXCategoria=()=>{
     }
 
     button:hover{
-         box-shadow: 0px 5px 16px  #FFE52A;
+         box-shadow: 0px 5px 16px  #E29578;
     }
 
     #search-bar{

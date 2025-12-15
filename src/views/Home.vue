@@ -44,7 +44,10 @@ const mealXCategoria=(categoria)=>{
   </div>
 </template>
 
-<style scoped>
+<style>
+  *{
+    background-color: #EDF6F9;
+  }
     .containerMeals {
         display: flex;
         flex-direction: row;
