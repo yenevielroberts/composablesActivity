@@ -28,7 +28,7 @@ const props=defineProps({
     border-radius: 10px;
     justify-content: center;
     align-items: center;
-    background-color: #006D77;
+    background-color: #83C5BE;
  }
 
 img{
@@ -36,16 +36,16 @@ img{
     width: 200px;
     border-radius: 10px;
     border:solid 3px;
-    border-color:#83C5BE;
-     box-shadow: 0px 5px 16px  #83C5BE;
+    border-color:white;
+     box-shadow: 0px 5px 16px  white;
 
 }
 
 .enlaces{
     text-decoration: none;
     border: solid 1px;
-    border-color: #FFDDD2;
-    background-color: #FFDDD2;
+    border-color: #E29578;
+    background-color: #E29578;
     padding: 5px;
     border-radius: 10px;
     color: black;
@@ -53,11 +53,11 @@ img{
 }
 
 .enlaces:hover{
-    box-shadow: 0px 5px 16px  #FFDDD2;
+    box-shadow: 0px 5px 16px  #E29578;
 }
 
 .card>h2{
-     background-color: #006D77;
+     background-color: #83C5BE;
      color: white;
 }
 </style>

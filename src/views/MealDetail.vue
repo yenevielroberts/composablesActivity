@@ -50,4 +50,68 @@ watch(
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+  /* Estado de carga y error */
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+div[v-if="loading"],
+div[v-else-if="error"] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  font-size: 1.3rem;
+  color: #666;
+}
+
+/* Contenedor principal de la página */
+.containerMeals {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+/* Detalle de la comida */
+.containerMeals > div {
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+}
+
+.containerMeals h1 {
+  font-size: 30px;
+  text-align: center;
+  color: #222;
+}
+
+.containerMeals img {
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+/* Sección de instrucciones */
+.containerMeals p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #444;
+}
+
+/* Texto Instrucciones */
+.containerMeals p strong {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+
+  .containerMeals h1 {
+    font-size: 1.6rem;
+  }
+
+
+</style>

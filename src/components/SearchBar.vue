@@ -12,7 +12,7 @@ const buscarXCategoria=()=>{
 <template>
 
 <div id="search-bar">
-   <input type="text" v-model="categoria"/>
+   <input type="text" v-model="categoria" placeholder="Busca por categoria"/>
     <button @click="buscarXCategoria">Buscar</button> 
 </div>
 
@@ -50,6 +50,9 @@ const buscarXCategoria=()=>{
     }
 
     #search-bar{
-        margin: 10px;
+         display:flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
     }
 </style>
