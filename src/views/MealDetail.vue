@@ -41,6 +41,10 @@ watch(
       <div v-for="meal in data.meals" >
         <h1>{{meal.strMeal }}</h1>
         <img :src="meal.strMealThumb"/> 
+        <p><strong>Ingredientes:</strong></p>
+        <ul>
+          <li></li>
+        </ul>
         <p><strong>Instrucciones: </strong></p>
         <p>{{ meal.strInstructions }}</p>
       </div>
