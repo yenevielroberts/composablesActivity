@@ -21,6 +21,24 @@ watch(
         cargarMeal(newId)
     }
 )
+
+
+function getIngredients(meal){
+  const ingredients=[]
+
+  for(let i=1; i<20; i++){
+    const ingredient=meal[`strIngredient${i}`]
+    const measure=meal[`strMeasure${i}`]
+
+    if(ingredient && ingredient.trim() !==''){
+      ingredients.push({
+        ingredient, measure
+      })
+    }
+  }
+
+  return ingredients
+}
 </script>
 
 <template>
@@ -41,11 +59,11 @@ watch(
       <div v-for="meal in data.meals" >
         <h1>{{meal.strMeal }}</h1>
         <img :src="meal.strMealThumb"/> 
-        <p><strong>Ingredientes:</strong></p>
+        <p><strong>Ingredients:</strong></p>
         <ul>
-          <li></li>
+          <li v-for="(item, index) in getIngredients(meal)" :key="index">{{ item.ingredient }}- {{ item.measure }}</li>
         </ul>
-        <p><strong>Instrucciones: </strong></p>
+        <p><strong>Instructions: </strong></p>
         <p>{{ meal.strInstructions }}</p>
       </div>
     </div>

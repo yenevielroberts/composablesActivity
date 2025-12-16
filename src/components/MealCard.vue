@@ -11,7 +11,7 @@ const props=defineProps({
     <div class="card">
         <img :src="props.img"/>
         <h2>{{ props.name }}</h2>
-        <RouterLink :to="`/detail/${props.id}`" class="enlaces">Recepte</RouterLink>
+        <RouterLink :to="`/detail/${props.id}`" class="enlaces">Recipe</RouterLink>
     </div>
 </template>
 

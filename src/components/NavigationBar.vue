@@ -4,7 +4,7 @@
 <template>
 
     <header>
-        <h1>Receptari Vue + The MealDB</h1>
+        <h1>Vue Recipe Book + The MealDB</h1>
         <nav>
             <RouterLink to="/"> Home</RouterLink>
         </nav>
